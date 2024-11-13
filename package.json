@@ -1,0 +1,16 @@
+{
+  "name": "pretty-log",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "demo": "ts-node src/demo.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Javascript implementation of PrettyLog",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
