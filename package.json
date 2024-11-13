@@ -1,16 +1,27 @@
 {
-  "name": "pretty-log",
+  "name": "@themysterys/pretty-log",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "demo": "ts-node src/demo.ts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "TheMysterys",
+  "license": "MIT",
   "description": "Javascript implementation of PrettyLog",
   "devDependencies": {
     "@types/node": "^22.9.0",
     "typescript": "^5.6.3"
-  }
+  },
+  "dependencies": {
+    "undici-types": "^6.19.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMysterys/PrettyLog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheMysterys/PrettyLog/issues"
+  },
+  "homepage": "https://github.com/TheMysterys/PrettyLog#readme"
 }
