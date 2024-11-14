@@ -1,6 +1,6 @@
 {
   "name": "@themysterys/pretty-log",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "demo": "ts-node src/demo.ts"
