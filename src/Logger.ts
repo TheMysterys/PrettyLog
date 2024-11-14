@@ -2,7 +2,7 @@ import { AnsiColor } from "./Ansi";
 import { LoggerFileWriter } from "./LoggerFileWriter";
 import { CustomLogType, LogType } from "./LogType";
 
-const LoggerStyle = {
+export const LoggerStyle = {
 	FULL: "<background><black><prefix>: <message>",
 	PREFIX: "<background><black><prefix>:<reset> <foreground><message>",
 	SUFFIX: "<foreground><prefix>: <background><black><message>",
@@ -13,7 +13,7 @@ const LoggerStyle = {
 };
 
 export const LoggerSettings = {
-	saveToFile: true,
+	saveToFile: false,
 	saveDirectoryPath: "./logs/",
 	loggerStyle: LoggerStyle.PREFIX,
 	logFileNameFormat: "yyyy-MM-dd",
