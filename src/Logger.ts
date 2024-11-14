@@ -23,13 +23,13 @@ export function log(message: string, logType: CustomLogType = LogType.RUNTIME) {
 	let pattern = LoggerSettings.loggerStyle;
 	if (logType === LogType.FATAL) pattern = LoggerStyle.FULL;
 	pattern = pattern
-		.replace("<background>", logType.colorPair.background)
-		.replace("<foreground>", logType.colorPair.foreground)
-		.replace("<black>", AnsiColor.BLACK)
-		.replace("<prefix>", logType.name)
-		.replace("<message>", message)
-		.replace("<reset>", AnsiColor.RESET)
-		.replace("<bold>", AnsiColor.BOLD);
+		.replaceAll("<background>", logType.colorPair.background)
+		.replaceAll("<foreground>", logType.colorPair.foreground)
+		.replaceAll("<black>", AnsiColor.BLACK)
+		.replaceAll("<prefix>", logType.name)
+		.replaceAll("<reset>", AnsiColor.RESET)
+		.replaceAll("<bold>", AnsiColor.BOLD)
+		.replaceAll("<message>", message);
 
 	console.log(`${pattern}${AnsiColor.RESET}`);
 	if (LoggerSettings.saveToFile) {
