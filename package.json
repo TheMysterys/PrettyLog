@@ -1,6 +1,6 @@
 {
   "name": "@themysterys/pretty-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -19,9 +19,6 @@
     "@types/node": "^22.9.0",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
-  },
-  "dependencies": {
-    "undici-types": "^6.19.8"
   },
   "repository": {
     "type": "git",
